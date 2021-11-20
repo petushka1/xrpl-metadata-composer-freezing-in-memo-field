@@ -43,7 +43,7 @@ export const Output = ({ values }) => {
         <Grid container spacing={2}>
             <Grid item xs={12}>
                 <Paper className={classes.paper}>
-                    <pre>{JSON.stringify(output, '', 2)}</pre>
+                    <pre className={classes.output}>{JSON.stringify(output, '', 2)}</pre>
                     <pre>{valuesInBytesLength / 1000} Kb</pre>
                     {valuesInBytesLength > 1000 && (
                         <Typography className={classes.error}>Provided value should be less than 1Kb</Typography>
